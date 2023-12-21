@@ -1,4 +1,6 @@
 use std::{env};
+use std::iter::Cycle;
+use reqwest::Client;
 
 fn main() {
     let args: Vec<String> = env::args().skip(1).collect();
@@ -8,6 +10,10 @@ fn main() {
         let package:&String = &args[1];
 
         if command == "install" {
+            let client: Client = Client::new();
+
+            let url: String = ""
+
             println!("Installing package: {}", package)
         }
         else if command == "uninstall" {
