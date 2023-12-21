@@ -13,6 +13,7 @@ fn main() {
         else if command == "uninstall" {
             println!("Uninstalling package: {}", package)
         }
+        else { println!("Invalid usage!") }
     }
-    else { print!("Invalid usage") }
+    else { print!("Invalid usage!") }
 }
